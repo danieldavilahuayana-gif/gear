@@ -6,165 +6,208 @@ box-sizing: border-box;
 
 body {
 font-family: Arial, sans-serif;
-background-color: #111;
+background-color: #0b0b0b;
 color: white;
 }
 
 header {
 background-color: #050505;
-padding: 20px;
+padding: 20px 8%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+border-bottom: 2px solid #a51c1c;
 }
 
 header h1 {
-color: #e63946;
+color: #d62828;
+font-size: 26px;
 }
 
 nav a {
 color: white;
 text-decoration: none;
-margin-left: 20px;
+margin-left: 25px;
+font-weight: bold;
 }
 
 nav a:hover {
-color: #e63946;
+color: #d62828;
 }
 
 .inicio {
-height: 500px;
+height: 600px;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("rock.jpg");
+
+background-image:
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.85)
+),
+url("rock.jpg");
+
 background-size: cover;
 background-position: center;
 }
 
-.inicio h2 {
-font-size: 45px;
-margin-bottom: 15px;
+.contenido-inicio {
+max-width: 800px;
+padding: 20px;
 }
 
-.inicio p {
+.contenido-inicio h2 {
+font-size: 55px;
+color: #d62828;
+text-shadow: 3px 3px 10px black;
+margin-bottom: 20px;
+}
+
+.contenido-inicio p {
 font-size: 20px;
-margin-bottom: 25px;
+margin-bottom: 30px;
 }
 
 button {
-background-color: #e63946;
-color: white;
+background-color: #b51d1d;
 border: none;
+color: white;
 padding: 12px 25px;
 border-radius: 5px;
+font-size: 15px;
+font-weight: bold;
 cursor: pointer;
-font-size: 16px;
+margin: 5px;
 }
 
 button:hover {
-background-color: #b71c1c;
+background-color: #e32626;
+transform: scale(1.05);
 }
 
 .seccion {
-padding: 60px 10%;
+padding: 70px 10%;
 text-align: center;
 }
 
 .seccion h2 {
-font-size: 32px;
-margin-bottom: 20px;
-color: #e63946;
-}
-
-.seccion p {
-line-height: 1.6;
+font-size: 35px;
+color: #d62828;
+margin-bottom: 30px;
 }
 
 .musica {
-background-color: #1a1a1a;
+background-color: #151515;
 }
 
 .reproductor {
 background-color: #222;
-padding: 30px;
+max-width: 700px;
+margin: auto;
+padding: 35px;
+border-radius: 12px;
+box-shadow: 0 0 20px black;
+border: 1px solid #444;
+}
+
+.reproductor img {
+width: 250px;
+height: 250px;
+object-fit: cover;
 border-radius: 10px;
-max-width: 600px;
-margin: 30px auto;
+margin-bottom: 20px;
+}
+
+.reproductor h3 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.reproductor p {
+color: #bbb;
+margin-bottom: 20px;
 }
 
 audio {
 width: 100%;
-margin: 20px 0;
+margin: 15px 0;
 }
 
-.canciones {
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
+.controles {
+margin-top: 15px;
 }
 
-.cancion {
-background-color: #222;
-padding: 25px;
-width: 250px;
+.historia {
+max-width: 800px;
+margin: auto;
+font-size: 18px;
+line-height: 1.7;
+}
+
+.historia img {
+width: 400px;
+max-width: 100%;
 border-radius: 10px;
-}
-
-.cancion h3 {
-margin-bottom: 15px;
+margin-bottom: 25px;
 }
 
 .tarjetas {
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 25px;
 flex-wrap: wrap;
 }
 
-.tarjetas div {
-background-color: #222;
+.tarjeta {
+background-color: #1c1c1c;
+width: 260px;
 padding: 30px;
-width: 250px;
 border-radius: 10px;
+border-bottom: 3px solid #d62828;
 }
 
-.tarjetas h3 {
-color: #e63946;
-margin-bottom: 10px;
+.tarjeta h3 {
+color: #d62828;
+margin-bottom: 15px;
+font-size: 22px;
 }
 
-.contacto {
-background-color: #1a1a1a;
-}
-
-#mensaje {
-margin-top: 20px;
-color: #e63946;
-font-weight: bold;
+.tarjeta p {
+line-height: 1.5;
+color: #ccc;
 }
 
 footer {
 background-color: #050505;
 text-align: center;
-padding: 20px;
+padding: 25px;
+color: #888;
 }
 
 @media (max-width: 700px) {
 
 header {
 flex-direction: column;
-gap: 15px;
+gap: 20px;
+}
+
+nav {
+text-align: center;
 }
 
 nav a {
+display: inline-block;
 margin: 5px;
 }
 
-.inicio h2 {
-font-size: 32px;
+.contenido-inicio h2 {
+font-size: 35px;
+}
+
+.inicio {
+height: 500px;
 }
 
 }

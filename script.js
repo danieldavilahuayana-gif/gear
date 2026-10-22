@@ -1,19 +1,15 @@
-const audio = document.getElementById("audio");
 
-function mostrarMensaje() {
-alert("Bienvenido al mundo de Alex Rock 🎸");
-}
+const audio = document.getElementById("audio");
 
 function reproducir() {
 audio.play();
 }
 
+function pausar() {
+audio.pause();
+}
+
 function detener() {
 audio.pause();
 audio.currentTime = 0;
-}
-
-function mostrarContacto() {
-document.getElementById("mensaje").textContent =
-"Puedes encontrar a Alex Rock en sus redes sociales.";
 }
